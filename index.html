@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="./dom-elements.js"></script>
+		<script type="text/javascript" src="./loop.js"></script>
+		<script type="text/javascript" src="./background.js"></script>
+		<script type="text/javascript" src="./staticObstacles.js"></script>
+		<script type="text/javascript" src="./food.js"></script>
+		<script type="text/javascript" src="./snake.js"></script>
+		<script type="text/javascript" src="./levels.js"></script>
+		<script type="text/javascript" src="./game.js"></script>
+		<script type="text/javascript" src="./index.js"></script>
+		<link rel="stylesheet" href="./css/index.css" type="text/css" />
+		<title>Mapanare</title>
+	</head>
+	<body>
+		<div class="main-content">
+			<div>
+				<div class="banner"><strong id="level">LVL 1</strong></div>
+			</div>
+			<div>
+				<div style="margin-bottom: 10px"><strong>Mapanare V1</strong></div>
+				<div id="canvas-holder">
+					<canvas id="background" width="360" height="360"></canvas>
+					<canvas tabindex=1 id="game" width="360" height="360" autofocus></canvas>
+				</div>
+				<div style="margin-top: 10px">Move with arrows to start</div>
+			</div>
+			<div>
+				<div class="banner"><strong id="score">SCORE 0</strong></div>
+			</div>
+			<div id="notify-defeat" class="modal hidden">
+				<div>
+					<h2 id="msg-defeat">GAME OVER</h2>
+					<input type="button" value="click to restart" />
+				</div>
+			</div>
+			<div id="notify-next-lvl" class="modal hidden">
+				<div>
+					<h2 id="msg-next-lvl">LVL 0</h2>
+					<input type="button" value="continue" />
+				</div>
+			</div>
+			<div id="notify-success" class="modal hidden">
+				<div>
+					<h4 id="msg-success">YOU WIN</h4>
+					<input type="button" value="restart?" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
