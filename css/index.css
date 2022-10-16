@@ -1,0 +1,88 @@
+@font-face{
+    font-family: 'Pixel';
+    src: url('/fonts/PublicPixel-z84yD.ttf');
+}
+* {
+    font-family: 'Pixel';
+    font-size: 12px;
+    color: #ffffff;
+    user-select: none;
+}
+body, html {
+    margin: 0;
+    height: 100%;
+}
+body {
+    background-color: #db5cca;
+    position: relative;
+}
+.main-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #000000;
+    box-shadow: -6px 8px 25px 0px rgba(0,0,0,0.75);
+    border: 1px solid #D9D9D9;
+    border-radius: 50px;
+    height: 460px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    align-items: center;
+}
+.banner {
+    min-width: 150px;
+}
+#canvas-holder {
+    border: 1px solid #ffffff;
+    position: relative;
+    width: 360px;
+    height: 360px;
+    z-index: 1;
+}
+#canvas-holder canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#canvas-holder #background {
+    z-index: 2;
+}
+#canvas-holder #game {
+    background-color: transparent;
+    z-index: 3;
+}
+.modal {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.modal > div {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+#msg, #restart {
+    color: #ffffff;
+}
+input[type="button"] {
+    border-radius: 3px;
+    background-color: gray;
+    cursor: pointer;
+}
+.hidden {
+    visibility: hidden;
+    display: none;
+}
