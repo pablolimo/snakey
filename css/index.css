@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Pixel';
-    src: url('/fonts/PublicPixel-z84yD.ttf');
+    src: url('../fonts/PublicPixel-z84yD.ttf');
 }
 * {
     font-family: 'Pixel';
